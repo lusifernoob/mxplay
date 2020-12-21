@@ -47,7 +47,38 @@ async def echo(bot, update):
     #     action="typing"
     # )
     logger.info(update.from_user)
-    url = update.text
+    link =update.text.split('/')[-1]
+
+    link1 =link.split('-')[-1]
+
+    
+
+    print(link1)
+
+    chat = await event.get_chat()
+
+    url = f'''https://mx.tpro.ga/player?id={link1}&type=movie'''
+
+#open and read page
+
+    page = requests.get(url)
+
+    v = page.text
+
+#html = v.read()
+
+#create BeautifulSoup parse-able "soup"
+
+    soup = BS(page.text)
+
+    video = soup.find("video")
+
+#get the src attribute from the video tag
+
+    SRC = video.find("source").get("src")
+
+    #markup = client.build_reply_markup(Butto
+    url = SRC
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
