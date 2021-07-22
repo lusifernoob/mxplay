@@ -17,6 +17,6 @@ ALL CREDITS GOES TO THE BELOVED DEVELOPERS :)
 
 **upgrade** your subscription for [@AnyDLBot](https://telegram.dog/AnyDLBot) without having to run anything on your own
 
-#### The Easy Way
+## Easy Deploy:
+<p><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/lusifernoob/mxplay/edit/master)
